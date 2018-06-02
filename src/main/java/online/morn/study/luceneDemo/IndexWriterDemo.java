@@ -2,7 +2,9 @@ package online.morn.study.luceneDemo;
 
 import online.morn.study.luceneDemo.ik.IKAnalyzer4Lucene7;
 import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.document.*;
+import org.apache.lucene.document.Document;
+import org.apache.lucene.document.Field;
+import org.apache.lucene.document.FieldType;
 import org.apache.lucene.index.IndexOptions;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
@@ -10,8 +12,8 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
 import java.io.Closeable;
-import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 
 /**
  * 写索引Demo
@@ -26,7 +28,7 @@ public class IndexWriterDemo implements Closeable {
         IndexWriterConfig config = new IndexWriterConfig(analyzer);//索引配置
         config.setOpenMode(IndexWriterConfig.OpenMode.CREATE_OR_APPEND);//设置索引库的打开模式：新建、追加、新建或追加
         //索引存放目录
-        Directory directory = FSDirectory.open((new File(FILE_PITH)).toPath());//存放到文件系统中
+        Directory directory = FSDirectory.open(Paths.get(FILE_PITH));//存放到文件系统中
         //Directory directory = new RAMDirectory();//存放到内存中
         this.indexWriter = new IndexWriter(directory, config);//创建索引写对象
     }
