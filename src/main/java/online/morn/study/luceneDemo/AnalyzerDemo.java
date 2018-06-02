@@ -9,7 +9,7 @@ import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 
 import java.io.IOException;
 
-public class AnalizerDemo {
+public class AnalyzerDemo {
 
     private static void doToken(TokenStream ts) throws IOException {
         ts.reset();
