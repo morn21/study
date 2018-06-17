@@ -1,4 +1,4 @@
-package online.morn.study.luceneDemo.ik;
+package online.morn.study.lucene.demo.ik;
 
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.util.TokenizerFactory;

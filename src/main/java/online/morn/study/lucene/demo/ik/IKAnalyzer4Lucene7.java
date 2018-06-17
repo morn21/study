@@ -1,4 +1,4 @@
-package online.morn.study.luceneDemo.ik;
+package online.morn.study.lucene.demo.ik;
 
 import org.apache.lucene.analysis.Analyzer;
 

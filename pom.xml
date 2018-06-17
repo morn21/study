@@ -66,6 +66,13 @@
             <artifactId>solr-core</artifactId>
             <version>7.3.0</version>
         </dependency>
+
+        <!-- solrJ -->
+        <dependency>
+            <groupId>org.apache.solr</groupId>
+            <artifactId>solr-solrj</artifactId>
+            <version>7.3.0</version>
+        </dependency>
     </dependencies>
 
     <!--构建JDK1.8-->

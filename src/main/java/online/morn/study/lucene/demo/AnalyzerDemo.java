@@ -1,6 +1,6 @@
-package online.morn.study.luceneDemo;
+package online.morn.study.lucene.demo;
 
-import online.morn.study.luceneDemo.ik.IKAnalyzer4Lucene7;
+import online.morn.study.lucene.demo.ik.IKAnalyzer4Lucene7;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.cn.smart.SmartChineseAnalyzer;
